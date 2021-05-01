@@ -11,7 +11,7 @@
         pgrole: 'stash'
         intport: '9999'
         extport: '9999'
-        image: 'stash/stashapp:latest'
+        image: 'stashapp/stash:latest'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'

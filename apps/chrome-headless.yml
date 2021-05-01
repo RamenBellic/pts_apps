@@ -8,7 +8,7 @@
     # FACTS #######################################################################
     - name: 'Set Known Facts'
       set_fact:
-        pgrole: 'stash'
+        pgrole: 'chrome-headless'
         intport: '9666'
         extport: '9666'
         image: 'alpeware/chrome-headless-trunk:latest'

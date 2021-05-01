@@ -40,9 +40,9 @@
         pg_volumes:
           - '/opt/appdata/{{pgrole}}:/root/.stash'
           - '/mnt/unionfs/{{pgrole}}:/root/.stash/data'
-          - '/mnt/appdata/{{pgrole}}/config:/root/.stash/config'
-          - '/mnt/appdata/{{pgrole}}/metadata:/root/.stash/metadata'
-          - '/mnt/appdata/{{pgrole}}/cache:/root/.stash/cache'
+#         - '/mnt/appdata/{{pgrole}}/config:/root/.stash/config'
+#         - '/mnt/appdata/{{pgrole}}/metadata:/root/.stash/metadata'
+#         - '/mnt/appdata/{{pgrole}}/cache:/root/.stash/cache'
           - '/etc/localtime:/etc/localtime:ro'
 
     - name: 'Setting {{pgrole}} ENV'
@@ -50,10 +50,10 @@
         pg_env:
           PUID: '1000'
           PGID: '1000'
-          STASH_STASH: '/root/.stash/data/'
-          STASH_GENERATED: '/root/.stash/generated/'
-          STASH_METADATA: '/root/.stash/metadata'
-          STASH_CACHE: '/root/.stash/cache/'
+#         STASH_STASH: '/root/.stash/data/'
+#         STASH_GENERATED: '/root/.stash/generated/'
+#         STASH_METADATA: '/root/.stash/metadata'
+#         STASH_CACHE: '/root/.stash/cache/'
 
     # MAIN DEPLOYMENT #############################################################
     - name: 'Deploying {{pgrole}}'

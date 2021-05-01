@@ -9,7 +9,7 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'j-stash'
-        intport: '9969'
+        intport: '9999'
         extport: '9969'
         image: 'stashapp/stash:latest'
 

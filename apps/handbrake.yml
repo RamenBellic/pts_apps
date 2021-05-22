@@ -41,8 +41,8 @@
           - '/etc/localtime:/etc/localtime:ro'
           - '/opt/appdata/handbrake:/config:rw'
           - '/mnt/unionfs/:/storage:ro'
-          - '$HOME/HandBrake/output:/output:rw'
-          - '$HOME/HandBrake/watch:/watch:rw'
+          - '/home/gunna/HandBrake/output:/output:rw'
+          - '/home/gunna/HandBrake/watch:/watch:rw'
 
     - name: 'Setting {{pgrole}} ENV'
       set_fact:
